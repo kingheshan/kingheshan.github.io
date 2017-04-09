@@ -231,19 +231,19 @@
 
 
   
-    <article id="post-1-CSS极限编程" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-CSS使用方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/08/1-CSS极限编程/">1-CSS极限编程</a>
+      <a class="article-title" href="/2017/04/08/CSS使用方式/">CSS使用方式</a>
     </h1>
   
 
         
-        <a href="/2017/04/08/1-CSS极限编程/" class="archive-article-date">
+        <a href="/2017/04/08/CSS使用方式/" class="archive-article-date">
   	<time datetime="2017-04-08T14:38:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-08</time>
 </a>
         
@@ -251,8 +251,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>从今天起，开始将CSS极限编程课程中对应的视频课件写在这个博客里，一个视频对应一个文章，争取把内容做到最佳，Come On Baby！</p>
-<h2 id="CSS的作用是什么？"><a href="#CSS的作用是什么？" class="headerlink" title="CSS的作用是什么？"></a>CSS的作用是什么？</h2>
+        <pre><code>&lt;video width=&quot;1024&quot; controls=&quot;controls&quot; preload=&quot;yes&quot; poster=&quot;http://oo3kcso2d.bkt.clouddn.com/style.png&quot;&gt;
+&lt;source src=&quot;http://oo3kcso2d.bkt.clouddn.com/css%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F.mp4&quot; type=&quot;video/mp4&quot;&gt;
+&lt;track label=&quot;中文字幕&quot; kind=&quot;captions&quot; srclang=&quot;zh-CN&quot; src=&quot;http://oo3kcso2d.bkt.clouddn.com/css-use.vtt&quot;&gt;
+</code></pre><p></p>
+<hr>
+<p>这一节我们聊聊如何使用CSS。</p>
+<h3 id="CSS使用方式"><a href="#CSS使用方式" class="headerlink" title="CSS使用方式"></a>CSS使用方式</h3><p>在css中一共提供了3种使用方式：</p>
+<ul>
+<li>外部样式</li>
+<li>内部样式</li>
+<li>内联样式</li>
+</ul>
+<h4 id="外部样式"><a href="#外部样式" class="headerlink" title="外部样式"></a>外部样式</h4><p>首先我们可以将css样式书写于一个单独css文件中，css文件的扩展名为.css结尾。接着可以通过<link>标记链接外部这个文件即可。将<link>标记书写于<head>之间。<br><strong>1.css</strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h1</span>&#123;</div><div class="line">    <span class="attribute">color</span>:red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></head></p>
+<p><strong>HTML</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">href</span>=<span class="string">"1.css"</span> <span class="attr">rel</span>=<span class="string">"stylesheet"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p>这种形式就相当于把1.css中的代码复制到<link>标记所写的位置上了。</p>
+<h4 id="内部样式"><a href="#内部样式" class="headerlink" title="内部样式"></a>内部样式</h4><p>第二种方式可以使用内部样式，将样式书写于当前文档内部，放置在<style></style>元素之间，同样的<style></style>元素需要放到<head></head>之间。<br><strong>HTML</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">    <span class="selector-tag">h1</span>&#123;</div><div class="line">        <span class="attribute">color</span>:red;</div><div class="line">    &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<h4 id="内联样式"><a href="#内联样式" class="headerlink" title="内联样式"></a>内联样式</h4><p>第三种内联样式，是直接将样式书写于元素上，通过style属性来定义样式。</p>
+<p><strong>HTML</strong><br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">"color:red;"</span>&gt;</span>01Style<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<p><img src="http://oo3kcso2d.bkt.clouddn.com/use-demo.png" alt="use-style"></p>
+<hr>
+<p>可以看到三种方式都可以使用到CSS，但是我们到底需要使用哪种方式呢？</p>
+<p>在实际的开发中，我们会把相关样式写到单独的文件中，接着通过<link>标记引入外部样式表。这样的好处利于维护和管理，而且可以将结构和表现相分离。</p>
+<p>有的时候我们也可以针对单独页面在单独文档内部书写一些样式，这时候我们可以使用内部样式，包括我们课上做的一些小案例，我们都使用内部样式的形式来写。</p>
+<p><strong>最不建议使用行内样式，不利于维护，而且代码混乱</strong></p>
+
       
 
       
@@ -264,7 +287,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/04/08/1-CSS极限编程/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/04/08/CSS使用方式/">展开全文 >></a>
         </p>
       
 
