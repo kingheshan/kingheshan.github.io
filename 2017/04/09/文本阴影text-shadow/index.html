@@ -8,23 +8,23 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>文本阴影text-shadow | King&#39;s World</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。 text-shadow语法解析  第一个参数是水平方向的偏移量，正值向右，负值向左。 第二个参数是垂直方向偏移量，正值向下，负值向上。 第三个参数是阴影">
+  <meta name="description" content="在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。 text-shadow语法解析  第一个参数是水平方向的偏移量，正值向右，负值向左。 第二个参数是垂直方向偏移量，正值向下，负值向上。">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="文本阴影text-shadow">
 <meta property="og:url" content="http://yoursite.com/2017/04/09/文本阴影text-shadow/index.html">
 <meta property="og:site_name" content="King's World">
-<meta property="og:description" content="在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。 text-shadow语法解析  第一个参数是水平方向的偏移量，正值向右，负值向左。 第二个参数是垂直方向偏移量，正值向下，负值向上。 第三个参数是阴影">
+<meta property="og:description" content="在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。 text-shadow语法解析  第一个参数是水平方向的偏移量，正值向右，负值向左。 第二个参数是垂直方向偏移量，正值向下，负值向上。">
 <meta property="og:image" content="http://oo3kcso2d.bkt.clouddn.com/01style.png">
 <meta property="og:image" content="http://oo3kcso2d.bkt.clouddn.com/1-demo.png">
 <meta property="og:image" content="http://oo3kcso2d.bkt.clouddn.com/text-shadow.png">
 <meta property="og:image" content="http://oo3kcso2d.bkt.clouddn.com/2-syntax.png">
 <meta property="og:image" content="http://oo3kcso2d.bkt.clouddn.com/3-text-shadow-demo.png">
 <meta property="og:image" content="http://oo3kcso2d.bkt.clouddn.com/4-multiple-text-shadow.png">
-<meta property="og:updated_time" content="2017-04-09T08:02:22.000Z">
+<meta property="og:updated_time" content="2017-04-09T08:13:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="文本阴影text-shadow">
-<meta name="twitter:description" content="在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。 text-shadow语法解析  第一个参数是水平方向的偏移量，正值向右，负值向左。 第二个参数是垂直方向偏移量，正值向下，负值向上。 第三个参数是阴影">
+<meta name="twitter:description" content="在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。 text-shadow语法解析  第一个参数是水平方向的偏移量，正值向右，负值向左。 第二个参数是垂直方向偏移量，正值向下，负值向上。">
 <meta name="twitter:image" content="http://oo3kcso2d.bkt.clouddn.com/01style.png">
   
     <link rel="alternative" href="/atom.xml" title="King&#39;s World" type="application/atom+xml">
@@ -181,7 +181,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id=""><a href="#" class="headerlink" title=""></a><video width="1024" controls="controls" preload="yes" poster="http://oo3kcso2d.bkt.clouddn.com/logo.png"><source src="http://oo3kcso2d.bkt.clouddn.com/text-shadow.mp4" type="video/mp4"><track label="中文字幕" kind="captions" srclang="en" src="http://oo3kcso2d.bkt.clouddn.com/css-use.vtt"></video></h2><p><img src="http://oo3kcso2d.bkt.clouddn.com/01style.png" alt="01Style"></p>
+        <video id="video" controls="controls" preload="yes" poster="http://oo3kcso2d.bkt.clouddn.com/logo.png"><br>      <source id="mp4" src="http://oo3kcso2d.bkt.clouddn.com/text-shadow.mp4" type="video/mp4"><track label="中文字幕" kind="captions" srclang="zh" src="http://oo3kcso2d.bkt.clouddn.com/css-use.vtt"><br></video>
+
+<hr>
+<p><img src="http://oo3kcso2d.bkt.clouddn.com/01style.png" alt="01Style"></p>
 <p><img src="http://oo3kcso2d.bkt.clouddn.com/1-demo.png" alt="1-demo"><br>在css3之前没有提供文本阴影这个属性之前，想实现这样的效果，要么我们需要使用PS制作成图片，要么需要使用双重内容模拟文本阴影。那这两种方式其实都不是很合适，直到CSS3新增的这个text-shadow属性，让我们可以直接实现这种文本阴影效果。</p>
 <h3 id="text-shadow语法解析"><a href="#text-shadow语法解析" class="headerlink" title="text-shadow语法解析"></a>text-shadow语法解析</h3><p><img src="http://oo3kcso2d.bkt.clouddn.com/text-shadow.png" alt="sytanx"><br><img src="http://oo3kcso2d.bkt.clouddn.com/2-syntax.png" alt="syntax1"></p>
 <blockquote>
