@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/19/html5简介/index.html">
 <meta property="og:site_name" content="King's World">
 <meta property="og:description" content="#HTML5&amp;amp;CSS3  什么是HTML5？ HTML5新特性简介？ 为什么选择HTML5？ 浏览器的兼容性？ HTML5与HTML4的区别? 浏览器的兼容性  ##一、什么是HTML5？ HTML5 是对 HTML 标准的第五次修订，目前仍未完工。其主要的目标是将互联网语义化，以便更好地被人类和机器阅读，并同时提供更好地支持各种媒体的嵌入。HTML5 的语法是向后兼容的。">
-<meta property="og:updated_time" content="2017-06-19T15:31:08.000Z">
+<meta property="og:updated_time" content="2017-06-19T15:35:59.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="html5简介">
 <meta name="twitter:description" content="#HTML5&amp;amp;CSS3  什么是HTML5？ HTML5新特性简介？ 为什么选择HTML5？ 浏览器的兼容性？ HTML5与HTML4的区别? 浏览器的兼容性  ##一、什么是HTML5？ HTML5 是对 HTML 标准的第五次修订，目前仍未完工。其主要的目标是将互联网语义化，以便更好地被人类和机器阅读，并同时提供更好地支持各种媒体的嵌入。HTML5 的语法是向后兼容的。">
@@ -246,29 +246,17 @@
 <p>##四、HTML5与HTML4的区别</p>
 <p>1.语法的改变</p>
 <p>1.1 DOCTYPE的声明</p>
-<p>&gt;</p>
 <blockquote>
-<p>在XHTML1.0中DOCTYPE的声明有如下三种</p>
-<p>严格类型：</p>
-<figure class="highlight plain"><figcaption><span>html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;</div><div class="line">&gt;标准类型</div><div class="line">&gt;</div><div class="line">&gt;```&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</div></pre></td></tr></table></figure>
+<p>在XHTML1.0中DOCTYPE的声明有如下三种<br>严格类型：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>标准类型<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</div></pre></td></tr></table></figure></p>
+<p>框架集<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Frameset//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd&quot;&gt;</div></pre></td></tr></table></figure></p>
 </blockquote>
-<p>&gt;</p>
-<blockquote>
-<p>框架集</p>
-<figure class="highlight plain"><figcaption><span>html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">而在HTML5中只需要向上面介绍的，简单的写上:</div><div class="line"></div><div class="line">&gt;```&lt;!DOCTYPE html&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<hr>
-<p>1.2 字符编码</p>
-<p>&gt;</p>
-<blockquote>
-<p>XHTML中指定字符编码</p>
-<figure class="highlight plain"><figcaption><span>http-equiv="content-type" content="text/html;charset=utf-8"</span><a href="/>```">link</a></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">&gt;</div><div class="line">&gt;HTML5中指定字符编码</div><div class="line">&gt;</div><div class="line">&gt;```&lt;meta charset=&quot;utf-8&quot;&gt;</div></pre></td></tr></table></figure>
-</blockquote>
-<h2 id="gt"><a href="#gt" class="headerlink" title="&gt;"></a>&gt;</h2><p>1.3 元素标记</p>
-<p>在HTML5中，元素的标记可以省略。具体的说就是，元素的标记分为不允许写结束标记、可以省略结束标记和开始标记和结束标记都可以省略三种类型。</p>
-<ul>
-<li>不允许写结束标记的元素：area、base、br、command、embed、hr、img、input、keygen、link、meta、param、source、track、wbr。(不允许写结束标记的元素是指不允许使用开始标记和结束标记括起来的，只允许使用&lt;元素/&gt;的形式进行书写。像<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">+ 可以省略结束标记的元素：li、dt、dd、p、rt、rp、optgroup、option、colgroup、thead、tbody、tfoot、tr、td、th。</div><div class="line">+ 可以省略全部标记的元素：html、head、body、colgroup、tbody。(就是该元素可以完全被省略，可以不写。即使不写它也会在文档中以隐士方式存在。但是还是建议大家写上。)</div><div class="line"></div><div class="line">1.4 具有布尔属性值的属性</div><div class="line"></div><div class="line">对于具有boolean值的属性，像selected、checked、disabled这样的，当只写属性不写属性值得实惠，表示属性值为true，或则将属性名和属性值写成一样的或者空字符都代表为true；默认不写为false。</div><div class="line"></div><div class="line">```html</div><div class="line">&lt;input type=&quot;checkbox&quot; checked/&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;/&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; checked=&quot;&quot;/&gt;</div></pre></td></tr></table></figure></li>
-</ul>
+<p>而在HTML5中只需要向上面介绍的，简单的写上:</p>
+<figure class="highlight plain"><figcaption><span>html>```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">---</div><div class="line"></div><div class="line">1.2 字符编码</div><div class="line"></div><div class="line">&gt;XHTML中指定字符编码</div></pre></td></tr></table></figure>
+<p><meta http-equiv="content-type" content="text/html;charset=utf-8"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&gt;HTML5中指定字符编码</div></pre></td></tr></table></figure></p>
+<p><meta charset="utf-8"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">---</div><div class="line">1.3 元素标记</div><div class="line"></div><div class="line">在HTML5中，元素的标记可以省略。具体的说就是，元素的标记分为不允许写结束标记、可以省略结束标记和开始标记和结束标记都可以省略三种类型。</div><div class="line"></div><div class="line">+ 不允许写结束标记的元素：area、base、br、command、embed、hr、img、input、keygen、link、meta、param、source、track、wbr。(不允许写结束标记的元素是指不允许使用开始标记和结束标记括起来的，只允许使用&lt;元素/&gt;的形式进行书写。像</div></pre></td></tr></table></figure></p>
+<p><br>这就是错误的<br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">,正确的方式就是</div></pre></td></tr></table></figure></p>
+<p><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">+ 可以省略结束标记的元素：li、dt、dd、p、rt、rp、optgroup、option、colgroup、thead、tbody、tfoot、tr、td、th。</div><div class="line">+ 可以省略全部标记的元素：html、head、body、colgroup、tbody。(就是该元素可以完全被省略，可以不写。即使不写它也会在文档中以隐士方式存在。但是还是建议大家写上。)</div><div class="line"></div><div class="line">1.4 具有布尔属性值的属性</div><div class="line"></div><div class="line">对于具有boolean值的属性，像selected、checked、disabled这样的，当只写属性不写属性值得实惠，表示属性值为true，或则将属性名和属性值写成一样的或者空字符都代表为true；默认不写为false。</div><div class="line"></div><div class="line">```html</div><div class="line">&lt;input type=&quot;checkbox&quot; checked/&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;/&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; checked=&quot;&quot;/&gt;</div></pre></td></tr></table></figure></p>
 <p>1.5 省略引号</p>
 <p>当属性值不包含特殊字符像单引号、双引号、大于号、小于号、等号等，可以省略两边的引号。(但是推荐使用双引号，保证好的代码习惯)</p>
 <blockquote>
